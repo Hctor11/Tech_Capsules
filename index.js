@@ -22,7 +22,8 @@ app.use(express.static(__dirname + '/public'))
 //getters
 app.get('/', (req, res) => {
     res.render('home', {
-        image: images[0]
+        image: images[0],
+        image2: images[1],
     })
 })
 
@@ -36,6 +37,15 @@ app.get('/entry1', (req, res) => {
         image: images[0],
         name: 'entrada 1',
         title: 'hola testeo de titulo',
+    })
+})
+
+app.get('/entry2', (req, res) => {
+    res.render('entry2', {
+        layout: 'blog',
+        image: images[1],
+        name: 'entrada 2',
+        title: 'hola testeo de titulo pero version 2',
     })
 })
 
