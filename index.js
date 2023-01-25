@@ -18,6 +18,10 @@ app.get('/', (req, res) => {
     res.render('home')
 })
 
+app.get('/about', (req, res) => {
+    res.render('about')
+})
+
 // custon 404 page
 app.use((req, res) => {
     res.status(404)
