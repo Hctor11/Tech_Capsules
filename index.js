@@ -33,8 +33,9 @@ app.get('/about', (req, res) => {
 app.get('/entry1', (req, res) => {
     res.render('entry1', {
         layout: 'blog',
-        image: images[1],
-        name: 'hola entrada 1'
+        image: images[0],
+        name: 'entrada 1',
+        title: 'hola testeo de titulo',
     })
 })
 
